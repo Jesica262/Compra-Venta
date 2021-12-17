@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"/>
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_el_titulo"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"/>
+
+    <EditText
+        android:id="@+id/editTextTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_email"
+        android:inputType="textEmailAddress"
+        tools:ignore="TouchTargetSizeCheck"
+        android:imeOptions="actionDone"
+        android:autofillHints="no" />
+
+    <TextView
+        android:id="@+id/textDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Descripcion"/>
+
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_descripcion"
+        android:gravity="top|left"
+        android:lines="20"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        tools:ignore="TouchTargetSizeCheck"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Precio"/>
+
+    <EditText
+        android:id="@+id/editTextPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_Precio"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/textCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ListaCategoria"
+        android:minHeight="24dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:minHeight="24dp"/>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textDescuentos"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/descuento"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Switch
+            android:id="@+id/switchDescuento"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_gravity="right"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:textOff="OFF"
+            android:textOn="ON"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textCero"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:visibility="gone"
+
+            app:layout_constraintEnd_toStartOf="@+id/seekBarPorcentaje"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <TextView
+            android:id="@+id/textPor"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="296dp"
+            android:text="0"
+            android:visibility="gone"
+
+            app:layout_constraintStart_toEndOf="@+id/seekBarPorcentaje"
+            app:layout_constraintStart_toStartOf="@+id/seekBarPorcentaje"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <SeekBar
+            android:id="@+id/seekBarPorcentaje"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:minHeight="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkBoxRetiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Retiro"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textDrireccionRetiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/Direccion"/>
+
+    <EditText
+        android:id="@+id/editTextDireccionRetiro"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:inputType="text"
+        android:hint="@string/DireccionRetiro"
+        android:imeOptions="actionDone"
+
+        />
+
+
+    <CheckBox
+        android:id="@+id/checkAceptarTerminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AceptarTerminos"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/buttonPublicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/publicar" />
+
+
+</LinearLayout>

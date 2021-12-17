@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CompraVenta</string>
+    <string name="titulo">Titulo</string>
+    <string name="Email">Correo de contacto</string>
+    <string name="Descripcion">Descripcion (Opcional)</string>
+    <string name="Precio">Precio</string>
+    <string name="ListaCategoria">Categorias</string>
+    <string name="ingrese_descripcion">Ingrese descripcion..</string>
+    <string name="ingrese_Precio">Ingrese el Precio..</string>
+    <string name="Porcentaje">Porcentaje</string>
+    <string name="descuento">Ofrecer descuento de envío</string>
+    <string name="Retiro">Retiro en persona</string>
+    <string name="AceptarTerminos">Aceptar los terminos y condiciones</string>
+    <string name="variablePorcentaje" />
+    <string name="Direccion">Direccion de retiro</string>
+    <string name="DireccionRetiro">Direccion de retiro...</string>
+    <string name="ingrese_el_titulo">Ingrese el titulo..</string>
+    <string name="publicar">Publicar</string>
+    <string name="ingrese_email">Ingrese email..</string>
+
+
+</resources>
